@@ -1,13 +1,12 @@
 import React from "react";
+import Contactform from "./Contactform";
+import Container from "react-bootstrap/Container";
 
 export const Contact = () => (
   <div>
-    <h2>You're now on Contact page</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit delectus
-      porro natus explicabo maiores vero eos, dicta asperiores? Quam ducimus
-      voluptate laudantium similique tenetur a doloribus quod, omnis nostrum
-      dolorum.
-    </p>
+    <Container className='p-30-0'>
+      <h2>You're now on Contact page</h2>
+      <Contactform></Contactform>
+    </Container>
   </div>
 );
