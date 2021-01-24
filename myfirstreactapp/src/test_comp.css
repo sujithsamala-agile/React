@@ -1,0 +1,33 @@
+button {
+  font-size: 20px;
+  padding: 5px 20px;
+  color: white;
+  outline: none;
+  line-height: 16px;
+  font-weight: 600;
+  font-family: "Open Sans",OpenSans-Regular,sans-serif;
+  color: #0a2c75;
+  border-color: #0a2c75;
+  border-radius: 100px;
+  text-transform: uppercase;
+  box-shadow: none;
+  
+  box-shadow: none;
+}
+#custom-card {
+  border: 1px solid #000000;
+  width: 33%;
+  height: auto;
+  text-align: center;
+  padding: 15px;
+}
+.row {
+  display: flex;
+}
+.inline {
+  display: block;
+}
+h3, p
+{
+    color:black;
+}
