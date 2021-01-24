@@ -24,9 +24,14 @@ const Styles = styled.div`
 
 export const NavigationBar = () => (
   <Styles>
-    <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark'>
+    <Navbar
+      collapseOnSelect
+      expand='lg'
+      bg='dark'
+      variant='dark'
+      className='m-b-0'>
       <Navbar.Brand className='app-title' href='#home'>
-        React Play Ground
+        <a href='/'>React Play Ground</a>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls='responsive-navbar-nav' />
       <Navbar.Collapse id='responsive-navbar-nav'>

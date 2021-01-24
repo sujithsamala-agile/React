@@ -1,7 +1,9 @@
 import React from "react";
+import FancyCurvedBanner from "./Components/FancyCurvedBanner";
 
 export const Home = () => (
-  <div>
+  <React.Fragment>
+    <FancyCurvedBanner></FancyCurvedBanner>
     <h2>Home Page</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit delectus
@@ -9,5 +11,5 @@ export const Home = () => (
       voluptate laudantium similique tenetur a doloribus quod, omnis nostrum
       dolorum.
     </p>
-  </div>
+  </React.Fragment>
 );

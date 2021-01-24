@@ -19,7 +19,7 @@ const Styles = styled.div`
     position: relative;
     background-size: cover;
     background-size: cover;
-    background-position: 10% 75% !important;
+    background-position: 10% 55% !important;
     &::after {
       content: "";
       position: absolute;
@@ -29,7 +29,7 @@ const Styles = styled.div`
       height: 100%;
       background-size: 100% auto;
       z-index: 0;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: rgba(0, 0, 0, 0.4);
       // background-color: rgba(0, 0, 128, 0.3);
       // background-color: rgba(255, 191, 0, 0.3);
       border-bottom-right-radius: 80% 8%;
@@ -38,7 +38,7 @@ const Styles = styled.div`
     .wrapper {
       z-index: 9999999;
       position: relative;
-      width: 75%;
+      width: 50%;
     }
     h1 {
       font-family: "AvenirNext-Regular", AvenirNext-Regular, sans-serif;
@@ -73,50 +73,21 @@ const Styles = styled.div`
   }
 `;
 
-export const Banners = () => (
-  <React.Fragment>
-    <Styles>
-      {/* Simple Banner */}
-      <p>Here are some of banner templates, Enjoy!!!</p>
-      <Jumbotron>
-        <h1>Hero Title Text!</h1>
+export const FancyCurvedBanner = () => (
+  <Styles>
+    <Jumbotron className='fancy'>
+      <div className='wrapper'>
+        <h1>Fancy Banner!!!!</h1>
         <p>
           This is a simple hero unit, a simple jumbotron-style component for
           calling extra attention to featured content or information.
         </p>
         <p>
-          <Button variant='primary'>Learn more</Button>
+          <Button variant='outline-light'>Learn more</Button>
         </p>
-      </Jumbotron>
-      {/* Fancy Banner */}
-
-      <Jumbotron className='fancy with-bottom-radius'>
-        <div className='wrapper'>
-          <h1>Fancy Banner!!!!</h1>
-          <p>
-            This is a simple hero unit, a simple jumbotron-style component for
-            calling extra attention to featured content or information.
-          </p>
-          <p>
-            <Button variant='outline-light'>Learn more</Button>
-          </p>
-        </div>
-      </Jumbotron>
-
-      <Jumbotron className='fancy'>
-        <div className='wrapper'>
-          <h1>Fancy Banner!!!!</h1>
-          <p>
-            This is a simple hero unit, a simple jumbotron-style component for
-            calling extra attention to featured content or information.
-          </p>
-          <p>
-            <Button variant='outline-light'>Learn more</Button>
-          </p>
-        </div>
-      </Jumbotron>
-    </Styles>
-  </React.Fragment>
+      </div>
+    </Jumbotron>
+  </Styles>
 );
 
-export default Banners;
+export default FancyCurvedBanner;
