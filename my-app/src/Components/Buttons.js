@@ -10,7 +10,7 @@ const Styles = styled.div`
 export const Buttons = () => (
   <React.Fragment>
     <Styles>
-      <Container className='p-30-0'>
+    <Container className='p-30-0'>
         {/* Border Buttons */}
         <p>Here are some of bordered button templates, Enjoy!!!</p>
         <Button variant='outline-primary'>Primary</Button>{" "}

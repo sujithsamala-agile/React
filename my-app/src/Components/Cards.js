@@ -12,7 +12,7 @@ const Styles = styled.div`
 export const Cards = () => (
   <>
     <Styles>
-      <Container className='p-30-0'>
+    <Container className='p-30-0'>
         <p>Here are some of bordered card templates, Enjoy!!!</p>
         <Row xs={1} md={3} className='card-wrapper'>
           <Col className=''>
