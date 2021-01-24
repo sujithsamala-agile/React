@@ -2,8 +2,8 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import { Jumbotron } from "react-bootstrap";
 import styled from "styled-components";
-// import Fancybanner from "../Assets/img/FancyBanner";
-import Fancybanner from "./FancyBanner.png";
+import Fancybanner from "./Assets/img/FancyBanner.png";
+// import Fancybanner from "./FancyBanner.png";
 
 const Styles = styled.div`
   p {
