@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-import { Jumbotron } from "react-bootstrap";
+import { Jumbotron, Container } from "react-bootstrap";
 import styled from "styled-components";
-// import Fancybanner from "../Assets/img/FancyBanner";
-import Fancybanner from "./FancyBanner.png";
+import Fancybanner from "../Assets/img/FancyBanner.png";
+// import Fancybanner from "./FancyBanner.png";
 
 const Styles = styled.div`
   p {
@@ -19,7 +19,7 @@ const Styles = styled.div`
     position: relative;
     background-size: cover;
     background-size: cover;
-    background-position: 10% 55% !important;
+    background-position: 10% 50% !important;
     &::after {
       content: "";
       position: absolute;
@@ -55,6 +55,8 @@ const Styles = styled.div`
       color: #fff;
       line-height: 29px;
       font-size: 20px;
+      font-size: 22px;
+      font-weight: bold;
       font-family: "Helvetica Neue", Arial !important;
       button.btn-outline-light {
         font-weight: 600;
@@ -76,16 +78,18 @@ const Styles = styled.div`
 export const FancyCurvedBanner = () => (
   <Styles>
     <Jumbotron className='fancy'>
-      <div className='wrapper'>
-        <h1>Fancy Banner!!!!</h1>
-        <p>
-          This is a simple hero unit, a simple jumbotron-style component for
-          calling extra attention to featured content or information.
-        </p>
-        <p>
-          <Button variant='outline-light'>Learn more</Button>
-        </p>
-      </div>
+      <Container>
+        <div className='wrapper'>
+          <h1>Welcome to the Fancy Playground!!!!</h1>
+          <p>
+            This is a simple hero unit, a simple jumbotron-style component for
+            calling extra attention to featured content or information.
+          </p>
+          <p>
+            <Button variant='outline-light'>Learn more</Button>
+          </p>
+        </div>
+      </Container>
     </Jumbotron>
   </Styles>
 );
